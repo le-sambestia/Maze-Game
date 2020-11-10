@@ -37,6 +37,7 @@ public class Maze : MonoBehaviour
         currentColumn = 0;
         scanComplete = false;
 
+
         HuntAndKill();
     }
 
@@ -64,7 +65,7 @@ public class Maze : MonoBehaviour
                 GameObject rightWall = Instantiate(Wall, new Vector3(j * size + 1.25f, 1.75f, -i * size), Quaternion.Euler(0, 90, 0));
                 rightWall.name = "RighttWall_" + i + "_" + j;
 
-                grid[i, j] = gameObject.AddComponent<MazeCell>();
+                grid[i, j] = new MazeCell();
                 grid[i, j].UpWall = upWall;
                 grid[i, j].DownWall = downWall;
                 grid[i, j].LeftWall = leftWall;
@@ -362,12 +363,12 @@ public class Maze : MonoBehaviour
 
         if (int.TryParse(HeightField.text, out rows))
         {
-            Rows = rows;
+            Rows = Mathf.Max(2, rows);
         }
 
         if (int.TryParse(WidthField.text, out columns))
         {
-            Columns = columns;
+            Columns = Mathf.Max(2, columns);
         }
 
         GenerateGrid();
