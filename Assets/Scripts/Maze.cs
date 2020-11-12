@@ -26,7 +26,7 @@ public class Maze : MonoBehaviour
     void GenerateGrid()
     {
         //destroy all children of transform
-        foreach(Transform transform in transform)
+        foreach (Transform transform in transform)
         {
             Destroy(transform.gameObject);
         }
@@ -77,12 +77,12 @@ public class Maze : MonoBehaviour
                 leftWall.transform.parent = transform;
                 rightWall.transform.parent = transform;
 
-                if(i == 0 && j == 0)
+                if (i == 0 && j == 0)
                 {
                     Destroy(leftWall);
                 }
 
-                if (i == Rows - 1 && j ==  Columns - 1)
+                if (i == Rows - 1 && j == Columns - 1)
                 {
                     Destroy(rightWall);
                 }
@@ -93,7 +93,7 @@ public class Maze : MonoBehaviour
     void HuntAndKill()
     {
         grid[currentRow, currentColumn].Visited = true;
-        while(!scanComplete)
+        while (!scanComplete)
         {
             Walk();
             Hunt();
