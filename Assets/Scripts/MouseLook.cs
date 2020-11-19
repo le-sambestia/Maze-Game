@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-
-    public float mouseSensitivity = 100f;
+    public bool cameraOn = true;
+    public float mouseSensitivity = 50f;
+    public bool torchOn = true;
+    public GameObject torch;
+    public void SetSensitivity (float mouseSensitivity)
+    {
+        Debug.Log(mouseSensitivity);
+    }
 
     public Transform playerBody;
 
@@ -14,7 +20,7 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -29,5 +35,18 @@ public class MouseLook : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
 
+        if (Input.GetKey("f"))
+        {
+            torchOn = !torchOn;
+        }
+
+        if (torchOn == false)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+        }
+        if (torchOn == true)
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 }
