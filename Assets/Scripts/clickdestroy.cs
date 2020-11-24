@@ -9,6 +9,10 @@ public class clickdestroy : MonoBehaviour
 
     void OnMouseDown()
     {
+        puzzlePanelUp = true;
+    }
+    public void togglePuzzlePanel()
+    {
         puzzlePanelUp = !puzzlePanelUp;
     }
     void Update()
