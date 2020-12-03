@@ -2609,6 +2609,7 @@ Transform:
   - {fileID: 30549962}
   - {fileID: 1591294760}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704351415
@@ -2708,6 +2709,10 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704351415}
   m_CullTransparentMesh: 0
+=======
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 676b981... no message
 --- !u!1 &729105391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3419,7 +3424,11 @@ RectTransform:
   - {fileID: 81171912}
   - {fileID: 729105392}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 676b981... no message
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3829,6 +3838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443382236b827414e964c23ba9735f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   puzzlePanelUp: 0
   puzzlePanel: {fileID: 1279571042}
 --- !u!65 &953791086
@@ -3891,6 +3901,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953791083}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  controller: {fileID: 903878932}
+  speed: 15
+  gravity: -19.81
+  jumpHeight: 3
+  groundCheck: {fileID: 740416223}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
+>>>>>>> parent of 676b981... no message
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3989,10 +4010,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6cb919315bf34349986ebd29d4d08fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   cameraOn: 1
   mouseSensitivity: 40
   torchOn: 1
   torch: {fileID: 2057601940}
+=======
+  mouseSensitivity: 50
+>>>>>>> parent of 676b981... no message
   playerBody: {fileID: 903878933}
 --- !u!82 &963194230
 AudioSource:
@@ -4119,7 +4144,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+  m_RootOrder: 2
+>>>>>>> parent of 676b981... no message
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &982779160
 MonoBehaviour:
@@ -6207,6 +6236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687823400
@@ -6248,6 +6278,9 @@ RectTransform:
   - {fileID: 1528853546}
   m_Father: {fileID: 704351416}
   m_RootOrder: 1
+=======
+  m_RootOrder: 3
+>>>>>>> parent of 676b981... no message
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
